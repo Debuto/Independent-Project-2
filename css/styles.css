@@ -1,0 +1,12 @@
+.btn {
+  border: none; /* Remove borders */
+  color: white; /*text color*/
+  padding: 14px 28px; /*padding*/
+  cursor: pointer; /*pointer cursor on mouse-over*/
+}
+
+.yes {background-color: #04AA6D;} /* Green */
+.yes:hover {background-color: #46a049;}
+
+.no {background-color: #f44336;} /* Red */
+.no:hover {background: #da190b;}
