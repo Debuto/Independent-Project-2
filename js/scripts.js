@@ -17,3 +17,8 @@ function refresh() {
   window.location.reload();
 }
 
+function theTalk() {
+  let theTalk = document.getElementById("theTalk");
+  theTalk.classList.remove("hidden");
+}
+

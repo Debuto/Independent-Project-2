@@ -13,6 +13,8 @@
      }
   </style>
   
+  <i onclick="refresh()" id="refresh" class="fa fa-refresh fa-spin refresh" style=""></i>
+
   <h1 class="header1">Future Software Developers needed!</h1>
   
     <h2 class="header2">
@@ -25,8 +27,12 @@
       <ol>
         <li>
           <form>
-            <label for="answer">Can you read?</label>
-            <input type="text" id="answer" name="answer"><br>  
+            <label for="answer">Do you read well?</label>
+            <select id="the1st?" name="the1st?">
+              <option value="null">--->(Select)<---</option>
+              <option value="yes">Has gone to the library</option>
+              <option value="no">Comics, anything with pictures!</option>
+            </select>
           </form>
         </li>
 
@@ -34,9 +40,13 @@
         <li>
           <form>
             <label for="answer">
-              Do you like a challennge?
+              Do you like a challenge?
             </label>
-            <input type="text" id="answer" name="answer"><br>  
+            <select id="the2nd?" name="the2nd?">
+              <option value="null">--->(Select)<---</option>
+              <option value="yes">Insane difficulty</option>
+              <option value="no">Tutorial loading...</option>
+            </select>
           </form>
         </li>
 
@@ -46,16 +56,40 @@
             <label for="answer">
                 Want more money?
             </label>
-            <input type="text" id="answer" name="answer"><br>  
+            <select id="the3rd?" name="the3rd?">
+              <option value="null">--->(Select)<---</option>
+              <option value="yes">Need that!</option>
+              <option value="no">More money is nice yes</option>
+            </select>
           </form>
         </li>
 
 
         <li>
           You're still here???
-          <button onclick="()" class="btn yes">Yes</button>
-          <button onclick="()" class="btn no">No</button>
+          <select id="the4th?" name="the4th?">
+            <option value="null">--->(Select)<---</option>
+            <option value="yes">Hell yeah!</option>
+            <option value="no">Unfortunately...</option>
+          </select>
         </li>
+
+        <li>
+          Ready to break the internet with google?
+          <select id="the5th?" name="the5th?">
+            <option value="null">--->(Select)<---</option>
+            <option value="yes">Imma wreck it!</option>
+            <option value="no">Back in my day we had dial up...</option>
+          </select>
+        </li>
+
+        <input type="submit" value="Submit" onclick="theTalk()">
+
+        <h1 id="theTalk" class="hidden">
+          Well all good things must come to an end...
+          <br>
+          Based on your results you should learn ""! 
+        </h1>
 
 
       </ol>
@@ -64,7 +98,5 @@
       <strong> It's not you it's me (SUPER YOU, COME BACK WHEN YOU READY FOR THE BIG LEAGUES!!!)</strong>
     </div>
 
-    <p class="refresh">
-      <i onclick="refresh()" id="refresh" class="fa fa-refresh fa-spin" style=""></i>
-    </p>
+    
 </html>
