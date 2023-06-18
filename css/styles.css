@@ -10,3 +10,7 @@
 
 .no {background-color: #f44336;} /* Red */
 .no:hover {background: #da190b;}
+
+.hidden {
+  display: none;
+}
