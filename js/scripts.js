@@ -22,3 +22,12 @@ function theTalk() {
   theTalk.classList.remove("hidden");
 }
 
+/* let strarray = String(Based on your results you should learn !) + new Array("Javascript","Python","C#");
+
+randomnum = Math.round(Math.random()*2);
+para = document.getElementbyId('langy');
+
+para.innerHTML = strarray[randomnum] */
+
+
+

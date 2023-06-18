@@ -20,7 +20,7 @@
     <h2 class="header2">
       So you think you can code huh?<br><br>
       <button onclick="myFunction()" class="btn yes">Yes</button>
-      <button onclick="myFunction2()" class="btn no">No</button>
+      <button onclick="myFunction2(); setTimeout(refresh, 3000)" class="btn no" id="reset">No</button>
     </h2>
  
     <div id="coder" class="hidden">
@@ -88,9 +88,8 @@
         <h1 id="theTalk" class="hidden">
           Well all good things must come to an end...
           <br>
-          Based on your results you should learn ""! 
+          <p id="langy"></p>          
         </h1>
-
 
       </ol>
     </div>
