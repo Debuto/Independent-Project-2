@@ -33,6 +33,7 @@ Link to site on GitHub Pages: https://github.com/Debuto/Independennt-Project-2.g
 - git bash
 - google.com (and there massive informational archive)
 - Windows OS 11.
+- https://www.w3schools.com/ (awesome site here!)
 
 ## Application setup instructions: 
 
