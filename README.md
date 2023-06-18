@@ -37,7 +37,11 @@ Link to site on GitHub Pages: https://github.com/Debuto/Independennt-Project-2.g
 
 ## Application setup instructions: 
 
+Download a zzip or clone repository in desired local directory. Open with VScode or appropiate software. Run with Live server, the result should be a HTML file with a survey to recommend a language to learn for coding. 
+
 # Known bugs:
+
+Unable to resolve attaching selected values to function to prevent loading of submit button (requiring most likely a boolean type rule.) Random generator for language array suggestion will not merge correctly to existing code, hence commented out at the moment on JS file.
 
 #### Copyright (c) <2023> <Deante Cacatian>
 
