@@ -14,3 +14,7 @@
 .hidden {
   display: none;
 }
+
+li {
+  padding-bottom: 15px;
+}
