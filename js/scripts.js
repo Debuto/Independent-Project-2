@@ -13,3 +13,7 @@ function myFunction2() {
   coder.classList.add("hidden");
 }
 
+function refresh() {
+  window.location.reload();
+}
+

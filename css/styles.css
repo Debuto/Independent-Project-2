@@ -4,20 +4,27 @@
   padding: 14px 28px; /*padding*/
   cursor: pointer; /*pointer cursor on mouse-over*/
   border-radius: 20%;
+  transition-duration: 0.4s;
 }
 
 .yes {
-  background-color: #04AA6D;
+  background-color: white;
+  color: green;
+  border: 2px solid green;
 } /* Green */
 .yes:hover {
   background-color: #46a049;
+  color: white;
 }
 
 .no {
-  background-color: #f44336;
+  background-color: white;
+  color: red;
+  border: 2px solid red;
 } /* Red */
 .no:hover {
-  background: #da190b;
+  background: red;
+  color: white;
 }
 
 .hidden {
@@ -49,4 +56,26 @@ div {
   outline: auto;
   padding: 20px 40px;
   margin: 50px 100px 50px 100px;
+}
+
+.normie {
+  text-align: center;
+  font-size: 100px;
+}
+
+input {
+  line-height: 20px;
+}
+
+.refresh {
+  color: lime;
+  float: right;
+  padding-right: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.refresh:hover {
+  font-size:48px; 
+  color: lime
 }
