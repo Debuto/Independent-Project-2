@@ -1,3 +1,7 @@
+window.addEventListener("load", function(){
+  console.log("ACK! Why arer you here!");
+})
+
 function myFunction() {
   let coder = document.getElementById("coder");
   coder.classList.remove("hidden");
