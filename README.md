@@ -13,18 +13,20 @@ This is a Programming Language Suggester
 6. Type this in Git Bash: git clone https://github.com/Debuto/Independent-Project-2.git
 7. Press ENTER output should look similiar to below:
 
----
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Cloning into `Spoon-Knife`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
 > remove: Total 10 (delta 1), reused 10 (delta 1)
 > Unpacking objects: 100% (10/10), done.
----
 
-## Application setup instructions: 
+<br>
+### Followed by Application setup instructions: <br>
 
 Download a zip or clone repository in desired local directory. Open with VScode or appropiate software. Run with Live server, the result should be a HTML file with a survey to recommend a language to learn for coding. 
+
+--- 
+<br>
 
 ## Description:
 *This is Deante's 2nd portfolio project with Epicodus!
@@ -32,6 +34,10 @@ Epicodus and coding partners from weekly lessons for knnnowledge of HTML
 This HTML will display a simple webpage*
 
 Link to site on GitHub Pages: https://github.com/Debuto/Independennt-Project-2.git
+
+<br>
+
+---
 
 # Technologies used: 
 - my personal desktop, 
@@ -45,6 +51,7 @@ Link to site on GitHub Pages: https://github.com/Debuto/Independennt-Project-2.g
 - https://www.python.org/ 
 - https://www.javascript.com/
 - https://learn.microsoft.com/en-us/dotnet/csharp/
+<br><br>
 
 # Known bugs:
 
