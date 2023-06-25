@@ -1,107 +1,83 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  
-  <head>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/scripts.js"></script>
-    <title>Programming Language Suggester</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <style>
-    body {
-      background-image: url("retro.gif");
-     }
-  </style>
-  
-  <i onclick="refresh()" id="refresh" class="fa fa-refresh fa-spin refresh" style=""></i>
 
-  <h1 class="header1">Future Software Developers needed!</h1>
-  
-    <h2 class="header2">
-      So you think you can code huh?<br><br>
-      <button onclick="myFunction()" class="btn yes">Yes</button>
-      <button onclick="myFunction2(); setTimeout(refresh, 3000)" class="btn no" id="reset">No</button>
-    </h2>
- 
-    <div id="coder" class="hidden">
-      <ol>
-        <form>
-          <li>
-            <label for="answer">
-              Do you read well?
-            </label><br>
-          
-            <select id="the1st?" name="the1st?">
-              <option value="null">--->(Select)<---</option>
-              <option value="yes">Has gone to the library</option>
-              <option value="no">Comics, anything with pictures!</option>
-            </select><br>
-          </li>
+<html>
 
-          <li>
-            <label for="answer">
-              Do you like a challenge?
-            </label><br>
-            
-            <select id="the2nd?" name="the2nd?">
-              <option value="null">--->(Select)<---</option>
-              <option value="yes">Insane difficulty</option>
-              <option value="no">Tutorial loading...</option>
-            </select><br>
-          </li>
+<head>
+  <title>Recommendation Form</title>
+  <script src="js/scripts.js"></script>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
 
-          <li>
-            <label for="answer">
-              Want more money?
-            </label><br>
+<style>
+  body {
+    background-image: url("retro.gif");
+   }
+</style>
 
-            <select id="the3rd?" name="the3rd?">
-              <option value="null">--->(Select)<---</option>
-              <option value="yes">Need that!</option>
-              <option value="no">More money is nice yes</option>
-            </select><br>
-          </li>
-          
+<body>
+  <h2 id="opener">
+    So you think you can code huh?<br><br>
+    <button id="yes1" class="btn yes">Yes</button>
+    <button id="no1" class="btn no">No</button>
+  </h2>
 
-          <li>
-            <label for="answer">
-              You're still here???
-            </label><br>
+  <div id="coder" class="hidden">
+    <h1 class="header1">Future Software Developers needed!</h1>
+    <form id="recommendationForm">
+      <label for="question1">Question 1: Do you read?</label><br>
+      <select id="question1" name="question1">
+        <option value="" disabled selected>Please choose an option</option>
+        <option value="web">Arrticles and blogs</option>
+        <option value="mobile">Webtoons, manhwa, stuffs!</option>
+        <option value="data">Reads nonfiction for enjoyment and work.....</option>
+        <option value="game">Anything with pictures!</option>
+      </select><br><br>
 
-            <select id="the4th?" name="the4th?">
-              <option value="null">--->(Select)<---</option>
-              <option value="yes">Hell yeah!</option>
-              <option value="no">Unfortunately...</option>
-            </select><br>
-          </li>
+      <label for="question2">Question 2: If you had to help make a book on cooking, what part would you want to write or help with???</label><br>
+      <select id="question2" name="question2">
+        <option value="" disabled selected>Please choose an option</option>
+        <option value="imperative">Making the Ingredients page!</option>
+        <option value="functional">Writing out the steps to cook?</option>
+        <option value="object-oriented">Dividing the steps between people?</option>
+        <option value="declarative">Or review the book to make it easier to reaaddddddd 9o9 (applause)</option>
+      </select><br><br>
 
-          <li>  
-            <label for="answer">
-              Ready to break the internet with google?
-            </label><br>
-          
-            <select id="the5th?" name="the5th?">
-              <option value="null">--->(Select)<---</option>
-              <option value="yes">Imma wreck it!</option>
-              <option value="no">Back in my day we had dial up...</option>
-            </select><br>          
-          </li>
-        </form>
+      <label for="question3">Question 3: Any codinng experience?</label><br>
+      <select id="question3" name="question3">
+        <option value="" disabled selected>Please choose an option</option>
+        <option value="beginner">(Scoffs) Yeah I've coded before...</option>
+        <option value="intermediate">Blah blah blah Python blah blah blah C#</option>
+        <option value="advanced">Why are you here doing this survey, get me a job! Help a bbrother out!!!</option>
+      </select><br><br>
 
-        <input type="submit" value="Submit" onclick="theTalk()">
+      <label for="question4">Question 4: If you were working in a kitchen, what team would you be apart of?</label><br>
+      <select id="question4" name="question4">
+        <option value="" disabled selected>Please choose an option</option>
+        <option value="frontend">Servers/Waiters, gotta get those tips!</option>
+        <option value="backend">Chef/Prep cook, enjoying the process of cooking.</option>
+        <option value="desktop">Contractor, someone has to get these guys new stoves and grills!</option>
+        <option value="mobile">Driver, I'm always on the go...</option>
+      </select><br><br>
 
-        <h1 id="theTalk" class="hidden">
-          Well all good things must come to an end...
-          <br>
-          <p id="langy"></p>          
-        </h1>
+      <label for="question5">Question 5: What is your goal in learning a programming language?</label><br>
+      <select id="question5" name="question5">
+        <option value="" disabled selected>Please choose an option</option>
+        <option value="career">Career advancement</option>
+        <option value="hobby">Hobby project</option>
+        <option value="research">Academic research</option>
+        <option value="startup">Building a startup</option>
+      </select><br><br>
 
-      </ol>
-    </div>
-    
-    <div id="normie" class="hidden normie">
-      <strong> It's not you it's me (SUPER YOU, COME BACK WHEN YOU READY FOR THE BIG LEAGUES!!!)</strong>
-    </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 
-    
+  <div id="normie" class="hidden normie">
+    <strong> It's not you it's me (SUPER YOU, COME BACK WHEN YOU READY FOR THE BIG LEAGUES!!!)</strong>
+  </div>
+
+  <div class="rec hidden" id="recommendationResult"></div>
+
+  <script src="scripts.js"></script>
+</body>
 </html>

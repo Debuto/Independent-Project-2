@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .btn {
   border: none; /* Remove borders */
   color: white; /*text color*/
@@ -12,6 +16,7 @@
   color: green;
   border: 2px solid green;
 } /* Green */
+
 .yes:hover {
   background-color: #46a049;
   color: white;
@@ -22,28 +27,13 @@
   color: red;
   border: 2px solid red;
 } /* Red */
+
 .no:hover {
   background: red;
   color: white;
 }
 
-.hidden {
-  display: none;
-}
-
-li {
-  padding-bottom: 15px;
-}
-
-.header1 {
-  background-color: white;
-  outline: auto;
-  padding: 20px 40px;
-  text-align: center;
-  margin: 50px 500px 50px 500px;
-}
-
-.header2 {
+h2 {
   background-color: white;
   outline: auto;
   padding: 20px 40px;
@@ -51,44 +41,36 @@ li {
   margin: 50px 700px 50px 700px;
 }
 
-div {
-  background-color: white;
-  outline: auto;
-  padding: 20px 40px;
-  margin: 50px 100px 50px 100px;
-}
-
 .normie {
   text-align: center;
   font-size: 100px;
+  background-color: white;
+  outline: auto;
+  padding: 20px 40px;
+  text-align: center;
+  margin: 50px 50px 50px 50px;
 }
 
-input {
-  line-height: 20px;
+h1 {
+  background-color: white;
+  outline: auto;
+  padding: 20px 40px;
+  text-align: center;
+  margin: 50px 500px 50px 500px;
 }
 
-.refresh {
-  color: lime;
-  float: right;
-  padding: 0px 10px;
-  cursor: pointer;
-  transition-duration: 0.4s;
+form {
+  background-color: white;
+  outline: auto;
+  padding: 20px 40px;
+  text-align: left;
+  margin: 50px 500px 50px 500px;
 }
 
-.refresh:hover {
-  font-size:48px; 
-  color: lime
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
+.rec {
+  background-color: white;
+  outline: auto;
+  padding: 20px 40px;
+  text-align: center;
+  margin: 50px 50px 50px 50px;
 }

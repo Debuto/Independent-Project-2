@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coding Language Recommendation</title>
+</head>
+<body>
+  <h1>Coding Language Recommendation Form</h1>
+
+  <form id="codingLanguageForm">
+    <h2>Question 1: What is your level of programming experience?</h2>
+    <select name="experience">
+      <option value="beginner">Beginner</option>
+      <option value="intermediate">Intermediate</option>
+      <option value="advanced">Advanced</option>
+    </select>
+
+    <h2>Question 2: What type of applications do you want to develop?</h2>
+    <select name="applicationType">
+      <option value="web">Web applications</option>
+      <option value="mobile">Mobile applications</option>
+      <option value="desktop">Desktop applications</option>
+    </select>
+
+    <h2>Question 3: Are you interested in web development?</h2>
+    <select name="webInterest">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+
+    <h2>Question 4: Do you prefer ease of learning or performance optimization?</h2>
+    <select name="learningPreference">
+      <option value="ease">Ease of learning</option>
+      <option value="performance">Performance optimization</option>
+    </select>
+
+    <h2>Question 5: Do you have a platform preference?</h2>
+    <select name="platformPreference">
+      <option value="web">Web</option>
+      <option value="mobile">Mobile</option>
+      <option value="desktop">Desktop</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="recommendation"></div>
+</body>
+
+<script>
+  document.getElementById('codingLanguageForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Retrieve selected values
+    const experience = document.querySelector('select[name="experience"]').value;
+    const applicationType = document.querySelector('select[name="applicationType"]').value;
+    const webInterest = document.querySelector('select[name="webInterest"]').value;
+    const learningPreference = document.querySelector('select[name="learningPreference"]').value;
+    const platformPreference = document.querySelector('select[name="platformPreference"]').value;
+
+    // Process the selected values and generate recommendation
+    let recommendation = '';
+
+    // Process experience level
+    if (experience === 'beginner') {
+      recommendation += 'As a beginner, ';
+      if (applicationType === 'web') {
+        recommendation += 'you should start with HTML/CSS and JavaScript for web development.';
+      } else {
+        recommendation += 'consider learning Python as a beginner-friendly language.';
+      }
+    } else if (experience === 'intermediate') {
+      recommendation += 'Since you have intermediate experience, ';
+      if (webInterest === 'yes') {
+        recommendation += 'you can focus on frontend development using';
+      } else {
+        recommendation += 'consider expanding your skills in backend development with';
+      }
+    } else {
+      recommendation += 'With advanced experience, you have a wide range of options. ';
+      if (learningPreference === 'ease') {
+        recommendation += 'If you prefer ease of learning, consider';
+      } else {
+        recommendation += 'If you prioritize performance, explore languages like';
+      }
+    }
+</script>
+</html>
