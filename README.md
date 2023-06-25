@@ -21,7 +21,10 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > Unpacking objects: 100% (10/10), done.
 
 <br>
+
 ### Followed by Application setup instructions: <br>
+
+---
 
 Download a zip or clone repository in desired local directory. Open with VScode or appropiate software. Run with Live server, the result should be a HTML file with a survey to recommend a language to learn for coding. 
 
