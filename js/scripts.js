@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Get the form element
   const form = document.getElementById('recommendationForm');
   const rec = document.getElementById("recommendationResult");
+  const tryAgain2 = document.getElementById("tryAgainButton2")
 
   // Add event listener to the form's submit event
   form.addEventListener('submit', function(event) {
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     rec.classList.remove("hidden");
     coder.classList.add("hidden");
+    tryAgainButton2.classList.remove("hidden");
 
     // Get the user's answers
     const question1Answer = document.getElementById('question1').value;

@@ -74,3 +74,22 @@ form {
   text-align: center;
   margin: 50px 50px 50px 50px;
 }
+
+.tryAgainButton {
+  border: none; /* Remove borders */
+  color: white; /*text color*/
+  padding: 100px 200px; /*padding*/
+  cursor: pointer; /*pointer cursor on mouse-over*/
+  border-radius: 20%;
+  transition-duration: 0.4s;
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  font-size: 200px; 
+}
+
+.tryAgainButton:hover {
+  background-color: #46a049;
+  border: 2px solid green;
+  color: white;
+}
